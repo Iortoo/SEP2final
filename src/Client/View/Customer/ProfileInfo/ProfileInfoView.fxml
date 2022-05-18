@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.View.Customer.ProfileInfo.ProfileInfoViewController">
+   <children>
+      <Label layoutX="215.0" layoutY="14.0" text="Profile info">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="profileButton" layoutX="385.0" layoutY="462.0" mnemonicParsing="false" onAction="#onProfileButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Profile">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="accountsButton" layoutX="31.0" layoutY="462.0" mnemonicParsing="false" onAction="#onAccountsButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Accounts">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Pane layoutX="31.0" layoutY="84.0" prefHeight="346.0" prefWidth="540.0" style="-fx-background-color: e2e2e2;">
+         <children>
+            <Button fx:id="requestButton" layoutX="138.0" layoutY="287.0" mnemonicParsing="false" onAction="#onRequestButton" prefHeight="36.0" prefWidth="244.0" style="-fx-background-color: c4c4c4;" text="Request information change">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="25.0" layoutY="56.0" text="Last name:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="21.0" text="First &amp; middle name:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="91.0" text="CPR:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="126.0" text="Address:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="161.0" text="DOB:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fmName" layoutX="181.0" layoutY="21.0" prefHeight="25.0" prefWidth="334.0" />
+            <TextField fx:id="lName" layoutX="136.0" layoutY="56.0" prefHeight="25.0" prefWidth="379.0" />
+            <TextField fx:id="id" layoutX="136.0" layoutY="91.0" prefHeight="25.0" prefWidth="379.0" />
+            <TextField fx:id="address" layoutX="136.0" layoutY="126.0" prefHeight="25.0" prefWidth="379.0" />
+            <TextField fx:id="dobDay" layoutX="136.0" layoutY="161.0" prefHeight="25.0" prefWidth="32.0" />
+            <Label layoutX="23.0" layoutY="198.0" text="Phone:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phone" layoutX="134.0" layoutY="198.0" prefHeight="25.0" prefWidth="379.0" />
+            <Label layoutX="178.0" layoutY="161.0" text="/">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dobMonth" layoutX="192.0" layoutY="161.0" prefHeight="25.0" prefWidth="32.0" />
+            <Label layoutX="230.0" layoutY="161.0" text="/">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dobYear" layoutX="244.0" layoutY="161.0" prefHeight="25.0" prefWidth="32.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

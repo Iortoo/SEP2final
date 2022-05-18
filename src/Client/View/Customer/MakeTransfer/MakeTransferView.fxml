@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane prefHeight="546.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.View.Customer.MakeTransfer.MakeTransferViewController">
+   <children>
+      <Label layoutX="190.0" layoutY="14.0" text="Transfer funds">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="10.0" layoutY="98.0" prefHeight="371.0" prefWidth="582.0" style="-fx-background-color: e2e2e2;">
+         <children>
+            <TextField fx:id="amountTextField" layoutX="181.0" layoutY="71.0" prefHeight="40.0" prefWidth="252.0" />
+            <Label layoutX="433.0" layoutY="71.0" prefHeight="40.0" prefWidth="49.0" text="DKK">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="sendButton" layoutX="21.0" layoutY="21.0" mnemonicParsing="false" onAction="#onSendButton" style="-fx-background-color: c4c4c4;" text="Send">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="accountNoTextField" layoutX="170.0" layoutY="239.0" prefHeight="35.0" prefWidth="372.0" />
+            <Label layoutX="14.0" layoutY="239.0" prefHeight="35.0" prefWidth="150.0" text="Recipient's account no:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="swiftTextField" layoutX="167.0" layoutY="296.0" prefHeight="35.0" prefWidth="103.0" />
+            <Label layoutX="14.0" layoutY="296.0" prefHeight="35.0" prefWidth="111.0" text="Recipient SWIFT:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="74.0" prefHeight="35.0" prefWidth="86.0" text="Amount:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="profileButton" layoutX="403.0" layoutY="496.0" mnemonicParsing="false" onAction="#onProfileButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Profile">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="transfersButton" layoutX="210.0" layoutY="496.0" mnemonicParsing="false" onAction="#onTransfersButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Transfers">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="overviewButton" layoutX="16.0" layoutY="496.0" mnemonicParsing="false" onAction="#onOverviewButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Overview">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

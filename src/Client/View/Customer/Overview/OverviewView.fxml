@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.View.Customer.Overview.OverviewViewController">
+   <children>
+      <Button fx:id="accountsButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAccountsButton" prefHeight="34.0" prefWidth="283.0" text="Accounts" />
+      <Button fx:id="loanButton" layoutX="303.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLoanButton" prefHeight="34.0" prefWidth="283.0" text="Loans" />
+      <Label fx:id="accountNoLabel" layoutX="18.0" layoutY="54.0" prefHeight="18.0" prefWidth="374.0" text="Account no.:" />
+      <Label layoutX="17.0" layoutY="71.0" prefHeight="54.0" prefWidth="138.0" text="Balance:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="profileButton" layoutX="401.0" layoutY="352.0" mnemonicParsing="false" onAction="#onProfileButton" prefHeight="34.0" prefWidth="185.0" text="Profile" />
+      <Button fx:id="transfersButton" layoutX="18.0" layoutY="352.0" mnemonicParsing="false" onAction="#onTransfersButton" prefHeight="34.0" prefWidth="185.0" text="Transfers" />
+      <Button fx:id="depositButton" layoutX="403.0" layoutY="63.0" mnemonicParsing="false" onAction="#onDepositButton" prefHeight="34.0" prefWidth="82.0" text="Deposit" />
+      <Button fx:id="withdrawButton" layoutX="500.0" layoutY="63.0" mnemonicParsing="false" onAction="#onWithdrawButton" prefHeight="34.0" prefWidth="82.0" text="Withdraw" />
+      <TextField fx:id="balanceTextField" editable="false" layoutX="155.0" layoutY="76.0" prefHeight="46.0" prefWidth="238.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="transactionsListView" layoutX="19.0" layoutY="125.0" prefHeight="222.0" prefWidth="565.0" />
+   </children>
+</AnchorPane>

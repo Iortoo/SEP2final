@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane prefHeight="546.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.View.Customer.Deposit.DepositViewController">
+   <children>
+      <Label layoutX="190.0" layoutY="14.0" text="Deposit funds">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="30.0" layoutY="98.0" prefHeight="334.0" prefWidth="540.0" style="-fx-background-color: e2e2e2;">
+         <children>
+            <TextField fx:id="amountTextField" layoutX="120.0" layoutY="70.0" prefHeight="40.0" prefWidth="252.0" />
+            <Label layoutX="459.0" layoutY="70.0" prefHeight="40.0" prefWidth="49.0" text="DKK">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="depositButton" layoutX="232.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDepositButton" style="-fx-background-color: c4c4c4;" text="Deposit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="cardNoTextField" layoutX="121.0" layoutY="126.0" prefHeight="35.0" prefWidth="398.0" />
+            <Label layoutX="19.0" layoutY="126.0" prefHeight="35.0" prefWidth="86.0" text="Card no:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cvvTextField" layoutX="125.0" layoutY="183.0" prefHeight="35.0" prefWidth="103.0" />
+            <TextField fx:id="expYearTextField" layoutX="194.0" layoutY="231.0" prefHeight="35.0" prefWidth="63.0" />
+            <Label layoutX="171.0" layoutY="231.0" prefHeight="35.0" prefWidth="11.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="expMonthTextField" layoutX="125.0" layoutY="231.0" prefHeight="35.0" prefWidth="34.0" />
+            <Label layoutX="30.0" layoutY="183.0" prefHeight="35.0" prefWidth="63.0" text="CVV:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="231.0" prefHeight="35.0" prefWidth="103.0" text="Exp. date:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="73.0" prefHeight="35.0" prefWidth="86.0" text="Amount:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="profileButton" layoutX="403.0" layoutY="496.0" mnemonicParsing="false" onAction="#onProfileButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Profile">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="transfersButton" layoutX="210.0" layoutY="496.0" mnemonicParsing="false" onAction="#onTransfersButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Transfers">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="overviewButton" layoutX="16.0" layoutY="496.0" mnemonicParsing="false" onAction="#onOverviewButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Overview">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

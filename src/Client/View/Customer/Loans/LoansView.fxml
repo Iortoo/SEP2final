@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane prefHeight="632.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.View.Customer.Loans.LoansViewController">
+   <children>
+      <Label layoutX="219.0" layoutY="14.0" text="Loans">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="30.0" layoutY="79.0" prefHeight="474.0" prefWidth="540.0" style="-fx-background-color: e2e2e2;">
+         <children>
+            <ListView fx:id="activeLoansListView" layoutX="17.0" layoutY="45.0" prefHeight="289.0" prefWidth="506.0" />
+            <Label layoutX="17.0" layoutY="14.0" text="Active loans:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="selectButton" layoutX="17.0" layoutY="346.0" mnemonicParsing="false" onAction="#onSelectButton" prefHeight="37.0" prefWidth="78.0" text="Select" />
+            <Button fx:id="newLoanButton" layoutX="196.0" layoutY="398.0" mnemonicParsing="false" onAction="#onNewLoanButton" prefHeight="54.0" prefWidth="149.0" text="New Loan" />
+         </children>
+      </Pane>
+      <Button fx:id="profileButton" layoutX="401.0" layoutY="581.0" mnemonicParsing="false" onAction="#onProfileButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Profile">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="transfersButton" layoutX="208.0" layoutY="581.0" mnemonicParsing="false" onAction="#onTransfersButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Transfers">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="overviewButton" layoutX="14.0" layoutY="581.0" mnemonicParsing="false" onAction="#onOverviewButton" prefHeight="34.0" prefWidth="185.0" style="-fx-background-color: c4c4c4;" text="Overview">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
