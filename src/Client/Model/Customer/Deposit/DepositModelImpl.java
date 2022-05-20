@@ -31,7 +31,7 @@ public class DepositModelImpl implements DepositModel
 
   /**
    * Method that makes the deposit
-   * @param userId the user ID
+   * @param accountNo the account number
    * @param amount the amount to deposit
    * @param cardNo the card number of the user
    * @param cvv the Card Verification Value of the user
