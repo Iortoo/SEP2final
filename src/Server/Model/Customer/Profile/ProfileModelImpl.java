@@ -1,6 +1,7 @@
 package Server.Model.Customer.Profile;
 
 import Server.Database.DatabaseAdapterImpl;
+import Server.Database.Profile.ProfileDAOImpl;
 
 public class ProfileModelImpl implements ProfileModel
 {
@@ -18,6 +19,6 @@ public class ProfileModelImpl implements ProfileModel
 
   public String getFullName(String username)
   {
-    return DatabaseAdapterImpl.getInstance().getFullName(username);
+    return ProfileDAOImpl.getInstance().getFullName(username);
   }
 }

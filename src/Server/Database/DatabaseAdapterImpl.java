@@ -102,7 +102,7 @@ public class DatabaseAdapterImpl implements  DatabaseAdapter
     // if is a big/external transfer also add to the request table
     return 1;
   }
-
+  // DONE
   public String getFullName(String username)
   {
     // return full name based on username
@@ -113,7 +113,7 @@ public class DatabaseAdapterImpl implements  DatabaseAdapter
   {
     // add a request to the request table to change credentials
   }
-
+  // DONE
   public String[] getInfo(String username)
   {
     // return an arraylist like this:
