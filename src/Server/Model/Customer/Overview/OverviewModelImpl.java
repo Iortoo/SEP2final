@@ -1,6 +1,8 @@
 package Server.Model.Customer.Overview;
 
+import Server.Database.Balance.BalanceDAOImpl;
 import Server.Database.DatabaseAdapterImpl;
+import Server.Database.Transaction.TransactionDAOImpl;
 
 import java.util.ArrayList;
 
@@ -20,11 +22,11 @@ public class OverviewModelImpl implements OverviewModel
 
   public String getBalance(String username)
   {
-    return DatabaseAdapterImpl.getInstance().getBalance(username);
+    return BalanceDAOImpl.getInstance().getBalance(username);
   }
 
   public ArrayList<String> getTransactions(String accountNo)
   {
-    return DatabaseAdapterImpl.getInstance().getTransactions(accountNo);
+    return TransactionDAOImpl.getInstance().getTransactions(accountNo);
   }
 }

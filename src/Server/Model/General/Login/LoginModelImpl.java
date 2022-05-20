@@ -1,6 +1,7 @@
 package Server.Model.General.Login;
 
 import Server.Database.DatabaseAdapterImpl;
+import Server.Database.Login.LoginDAOImpl;
 
 public class LoginModelImpl implements LoginModel
 {
@@ -18,7 +19,7 @@ public class LoginModelImpl implements LoginModel
 
   public int getLogin(String username, String password)
   {
-    int result = DatabaseAdapterImpl.getInstance().loginQuery(username,password);
+    int result = LoginDAOImpl.getInstance().loginQuery(username,password);
     System.out.println(result);
     return result;
   }

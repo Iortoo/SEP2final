@@ -35,7 +35,8 @@ public class LoginServerImpl implements LoginServer
     int result = LoginModelImpl.getInstance().getLogin(username,password);
     if(result==4) ServerImpl.getInstance().sendToEmployeeServer(clients);
     if(result==1) ServerImpl.getInstance().sendToCustomerServer(clients);
-    return LoginModelImpl.getInstance().getLogin(username,password);
+    System.out.println("SERVER");
+    return result;
   }
 
   public void setClients(List<ClientCallBack> clients) throws RemoteException

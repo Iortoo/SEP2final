@@ -23,6 +23,7 @@ public class LoginViewModel
   public void login(String username, String password)
   {
     model.login(username,password);
+    System.out.println("VIEW MODEL");
   }
 
   public LoginModel getModel()

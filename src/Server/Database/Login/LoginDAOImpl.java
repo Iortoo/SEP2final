@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Locale;
 
 public class LoginDAOImpl implements LoginDAO
 {
@@ -25,9 +26,9 @@ public class LoginDAOImpl implements LoginDAO
   {
     if(username==null || password==null) return 3;
     boolean customer=false, employee =false;
+    System.out.println("AAAAAAA");
     try(Connection connection = DatabaseConnection.getConnection()){
-      //Class.forName("org.postgresql.Driver");
-
+      Class.forName("org.postgresql.Driver");
       String sql = "SELECT id, password FROM customer where id = ? and password = ?";
 
       PreparedStatement statement = connection.prepareStatement(sql);
@@ -37,10 +38,11 @@ public class LoginDAOImpl implements LoginDAO
       String userId="", userPw="";
       if(resultSet.next())
       {
-        userId = resultSet.getString("user_id");
+        userId = resultSet.getString("id");
         userPw = resultSet.getString("password");
-        connection.close();
+        System.out.println(userId+" "+userPw+"AICI");
       }
+      connection.close();
       resultSet.close();
       statement.close();
       
@@ -51,14 +53,14 @@ public class LoginDAOImpl implements LoginDAO
         return 0;
       }
     }
-    catch (SQLException e){
+    catch (SQLException | ClassNotFoundException e){
       System.out.println(e.getMessage());
     }
 
     try(Connection connection = DatabaseConnection.getConnection()){
-      //Class.forName("org.postgresql.Driver");
+      Class.forName("org.postgresql.Driver");
 
-      String sql = "SELECT id, password FROM employee where id = ? and password = ?";
+      String sql = "SELECT id, password FROM bankemployee where id = ? and password = ?";
 
       PreparedStatement statement = connection.prepareStatement(sql);
       statement.setString(1,username);
@@ -67,10 +69,10 @@ public class LoginDAOImpl implements LoginDAO
       String userId="", userPw="";
       if(resultSet.next())
       {
-        userId = resultSet.getString("user_id");
+        userId = resultSet.getString("id");
         userPw = resultSet.getString("password");
-        connection.close();
       }
+      connection.close();
       resultSet.close();
       statement.close();
 
@@ -81,7 +83,7 @@ public class LoginDAOImpl implements LoginDAO
         return 0;
       }
     }
-    catch (SQLException e){
+    catch (SQLException | ClassNotFoundException e){
       System.out.println(e.getMessage());
     }
     return 2;

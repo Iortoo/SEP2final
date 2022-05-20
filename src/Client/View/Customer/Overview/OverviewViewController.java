@@ -77,12 +77,14 @@ public class OverviewViewController implements ViewController
 
   public void newBalance(PropertyChangeEvent e)
   {
+    System.out.println("newBalance");
     update();
   }
 
   private void update()
   {
-    balanceTextField.setText(viewModel.getBalance(username)+" DKK");
+    System.out.println("updatenewBalance");
+    balanceTextField.setText(viewModel.getBalance(accountNo)+" DKK");
     ArrayList<String> result = viewModel.getTransactions(accountNo);
     System.out.println(result.size());
     for(int i=0;i<result.size();i++)

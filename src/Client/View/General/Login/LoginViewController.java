@@ -37,6 +37,7 @@ public class LoginViewController implements ViewController
     String username = idTextField.getText();
     String password = passwordField.getText();
     viewModel.login(username,password);
+    System.out.println("CONTROLLER");
   }
 
   public void onSignupButton() throws IOException
@@ -47,9 +48,10 @@ public class LoginViewController implements ViewController
 
   private void loginAccepted() throws IOException
   {
+    String user = idTextField.getText();
     reset();
     JOptionPane.showMessageDialog(null,"Successfully logged in as customer");
-    viewHandler.openProfileView(idTextField.getText());
+    viewHandler.openProfileView(user);
   }
 
   private void passwordError() throws IOException

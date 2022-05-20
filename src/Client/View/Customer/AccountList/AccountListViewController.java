@@ -31,9 +31,11 @@ public class AccountListViewController implements ViewController
 
   private void getAccounts()
   {
+    System.out.println(username);
     ArrayList<String> result = viewModel.getAccounts(username);
     for(int i=0;i< result.size();i++)
     {
+      System.out.println(result.get(i));
       accountsListView.getItems().add(result.get(i));
     }
   }

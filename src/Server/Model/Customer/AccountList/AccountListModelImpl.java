@@ -1,5 +1,6 @@
 package Server.Model.Customer.AccountList;
 
+import Server.Database.AccountList.AccountListDAOImpl;
 import Server.Database.DatabaseAdapterImpl;
 
 import java.util.ArrayList;
@@ -20,6 +21,6 @@ public class AccountListModelImpl implements AccountListModel
 
   public ArrayList<String> getAccounts(String username)
   {
-    return DatabaseAdapterImpl.getInstance().getAccounts(username);
+    return AccountListDAOImpl.getInstance().getAccounts(username);
   }
 }

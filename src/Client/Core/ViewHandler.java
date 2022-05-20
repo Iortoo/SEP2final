@@ -99,20 +99,28 @@ public class ViewHandler
     stage.show();
   }
 
-  public void openProfileView(String username) throws IOException
+  public void openProfileView(String username)// throws IOException
   {
-    Scene scene = null;
-    FXMLLoader loader = new FXMLLoader();
-    Parent root = null;
+    try
+    {
+      Scene scene = null;
+      FXMLLoader loader = new FXMLLoader();
+      Parent root = null;
 
-    loader.setLocation(getClass().getResource("../View/Customer/Profile/ProfileView.fxml"));
-    root = loader.load();
-    ProfileViewController controller = loader.getController();
-    controller.init(this,viewModelFactory,username);
-    scene = new Scene(root);
-    stage.setTitle("Profile");
-    stage.setScene(scene);
-    stage.show();
+      loader.setLocation(getClass().getResource("../View/Customer/Profile/ProfileView.fxml"));
+      root = loader.load();
+      ProfileViewController controller = loader.getController();
+      controller.init(this,viewModelFactory,username);
+      scene = new Scene(root);
+      stage.setTitle("Profile");
+      stage.setScene(scene);
+      System.out.println("HANDLER");
+      stage.show();
+    }
+    catch (IOException e)
+    {
+      e.printStackTrace();
+    }
   }
 
   public void openAccountListView(String username) throws IOException

@@ -28,6 +28,7 @@ public class LoginModelImpl implements LoginModel
   public void login(String username, String password)
   {
     client.login(username,password);
+    System.out.println("MODEL");
   }
 
   private void validation(PropertyChangeEvent e)

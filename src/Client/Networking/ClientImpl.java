@@ -41,6 +41,7 @@ public class ClientImpl implements Client, ClientCallBack
   {
     int validation=-1;
     try{
+      System.out.println("CLIENT");
       validation = server.getLoginServer().login(username, password);
     }
     catch(RemoteException e){}
@@ -159,6 +160,7 @@ public class ClientImpl implements Client, ClientCallBack
   {
     ArrayList<String> rtrn = new ArrayList<>();
     try{
+      //System.out.println(server.getCustomerServer().getAccounts(username).get(0));
       rtrn = server.getCustomerServer().getAccounts(username);
     }catch(RemoteException e){}
     return rtrn;
