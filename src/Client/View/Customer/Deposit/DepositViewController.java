@@ -63,7 +63,7 @@ public class DepositViewController implements ViewController
 
     if(amount!=null && cardNo!=null && cvv!=null && !expDate.equals("/"))
     {
-      viewModel.deposit(username,amount,cardNo,cvv,expDate);
+      viewModel.deposit(accountNo,amount,cardNo,cvv,expDate);
       viewHandler.openOverviewView(username,accountNo);
     }
     else JOptionPane.showMessageDialog(null,"Please fill in all fields");

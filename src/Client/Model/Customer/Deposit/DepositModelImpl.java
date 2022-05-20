@@ -37,8 +37,8 @@ public class DepositModelImpl implements DepositModel
    * @param cvv the Card Verification Value of the user
    * @param expDate the expiry date of the card
    */
-  public void deposit(String userId,String amount,String cardNo,String cvv,String expDate)
+  public void deposit(String accountNo,String amount,String cardNo,String cvv,String expDate)
   {
-    client.deposit(userId,amount,cardNo,cvv,expDate);
+    client.deposit(accountNo,amount,cardNo,cvv,expDate);
   }
 }

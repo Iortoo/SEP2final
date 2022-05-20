@@ -11,8 +11,8 @@ public class WithdrawalViewModel
     this.model=model;
   }
 
-  public void withdraw(String username,String amount,String cardNo,String cvv,String expDate)
+  public void withdraw(String accountNo,String amount,String cardNo,String cvv,String expDate)
   {
-    model.withdraw(username,amount,cardNo,cvv,expDate);
+    model.withdraw(accountNo,amount,cardNo,cvv,expDate);
   }
 }

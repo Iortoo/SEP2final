@@ -10,10 +10,10 @@ public interface Client extends Subject
   void login(String username, String password);
   void employeeLogOut();
   void customerLogOut();
-  void deposit(String username,String amount,String cardNo,String cvv,String expDate);
+  void deposit(String accountNo,String amount,String cardNo,String cvv,String expDate);
   String getBalance(String username);
   String getFullName(String username);
-  void withdraw(String username,String amount,String cardNo,String cvv,String expDate);
+  void withdraw(String accountNo,String amount,String cardNo,String cvv,String expDate);
   void requestInfoChange(String fmName,String lName,String username,String adress,String dobD,String dobM,String dobY,String phone);
   String[] getInfo(String username);
   void newAccount(String username,String type, String amount);

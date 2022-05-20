@@ -65,20 +65,20 @@ public class ClientImpl implements Client, ClientCallBack
     catch (RemoteException e){};
   }
 
-  public void deposit(String username,String amount,String cardNo,String cvv,String expDate)
+  public void deposit(String accountNo,String amount,String cardNo,String cvv,String expDate)
   {
     try{
-      server.getCustomerServer().deposit(username,amount,cardNo,cvv,expDate);
+      server.getCustomerServer().deposit(accountNo,amount,cardNo,cvv,expDate);
       support.firePropertyChange("newBalance",null,"newBalance");
     }
     catch(RemoteException e){}
 
   }
 
-  public void withdraw(String username,String amount,String cardNo,String cvv,String expDate)
+  public void withdraw(String accountNo,String amount,String cardNo,String cvv,String expDate)
   {
     try{
-      server.getCustomerServer().withdraw(username,amount,cardNo,cvv,expDate);
+      server.getCustomerServer().withdraw(accountNo,amount,cardNo,cvv,expDate);
       support.firePropertyChange("newBalance",null,"newBalance");
     }catch(RemoteException e){};
   }

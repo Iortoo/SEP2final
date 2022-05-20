@@ -1,9 +1,6 @@
 package Server.Database.AccountList;
 
 import Server.Database.DatabaseConnection;
-import Server.Model.Customer.AccountList.AccountListModel;
-import Server.Model.Customer.AccountList.AccountListModelImpl;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

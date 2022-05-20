@@ -1,6 +1,7 @@
 package Server.Model.Customer.Withdrawal;
 
 import Server.Database.DatabaseAdapterImpl;
+import Server.Database.Withdraw.WithdrawDAOImpl;
 
 public class WithdrawalModelImpl implements WithdrawalModel
 {
@@ -18,6 +19,7 @@ public class WithdrawalModelImpl implements WithdrawalModel
 
   public void withdraw(String username,String amount,String cardNo,String cvv,String expDate)
   {
-    DatabaseAdapterImpl.getInstance().withdraw(username,amount,cardNo,cvv,expDate);
+    double take = Double.parseDouble(amount);
+    WithdrawDAOImpl.getInstance().withdraw(username,take,cardNo,cvv,expDate);
   }
 }

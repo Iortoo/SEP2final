@@ -16,7 +16,7 @@ public class DatabaseAdapterImpl implements  DatabaseAdapter
     if(instance==null) instance = new DatabaseAdapterImpl();
     return instance;
   }
-
+  // DONE
   public int loginQuery(String username, String password)
   {/*
     if(username==null || password==null) return 3;
@@ -73,19 +73,19 @@ public class DatabaseAdapterImpl implements  DatabaseAdapter
   {
     // add a request in the table to open up a new customer account
   }
-
+  // DONE
   public void deposit(String username, String amount,String cardNo,String cvv,String expDate)
   {
     // add to the deposit table
     // modify the account balance accordingly
   }
-
+  // DONE
   public void withdraw(String username, String amount,String cardNo,String cvv,String expDate)
   {
     //add to the withdraw table
     //modify the account balance accordingly
   }
-
+  // DONE
   public String getBalance(String username)
   {
     // return the account balance
@@ -153,7 +153,7 @@ public class DatabaseAdapterImpl implements  DatabaseAdapter
   {
     // remove request from table
   }
-
+  // DONE
   public ArrayList<String> getAccounts(String username)
   {
     // return accountNos based on username (id)

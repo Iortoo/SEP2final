@@ -63,7 +63,7 @@ public class WithdrawalViewController implements ViewController
 
     if(amount!=null && cardNo!=null && cvv!=null && !expDate.equals("/"))
     {
-      viewModel.withdraw(username,amount,cardNo,cvv,expDate);
+      viewModel.withdraw(accountNo,amount,cardNo,cvv,expDate);
       viewHandler.openOverviewView(username,accountNo);
     }
     else JOptionPane.showMessageDialog(null,"Please fill in all fields");

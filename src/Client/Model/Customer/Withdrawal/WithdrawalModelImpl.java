@@ -36,8 +36,8 @@ public class WithdrawalModelImpl implements WithdrawalModel
    * @param cvv the CVV of the card
    * @param expDate the expiry date of the card
    */
-  public void withdraw(String userId,String amount,String cardNo,String cvv,String expDate)
+  public void withdraw(String accountNo,String amount,String cardNo,String cvv,String expDate)
   {
-    client.withdraw(userId,amount,cardNo,cvv,expDate);
+    client.withdraw(accountNo,amount,cardNo,cvv,expDate);
   }
 }
