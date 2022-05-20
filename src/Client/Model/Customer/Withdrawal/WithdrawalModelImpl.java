@@ -30,7 +30,7 @@ public class WithdrawalModelImpl implements WithdrawalModel
 
   /**
    * Method that does the withdrawal
-   * @param userId the user ID
+   * @param accountNo the account number
    * @param amount the amount to withdraw
    * @param cardNo the card number
    * @param cvv the CVV of the card
